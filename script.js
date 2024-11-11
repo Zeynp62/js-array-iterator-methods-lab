@@ -233,12 +233,21 @@ console.log('Exercise 6 correct result: ', true)
 /*
 Exercise 7: Array.prototype.every()
 */
-
+// Complete the exercise in the space below:
 let isEveryone19OrOlder = devs.every((adult) => {
   return 2024 - adult.year >= 19
 })
-// Complete the exercise in the space below:
-
 // Check your work:
 console.log('Exercise 7 my result: ', isEveryone19OrOlder)
 console.log('Exercise 7 correct result: ', false)
+
+/*
+Exercise 8: Array.prototype.find()
+*/
+let commentById = comments.find((comment) => {
+  return comment.id === 823423
+})
+
+// Check your work:
+console.log('Exercise 8 my result: ', commentById)
+console.log('Exercise 8 correct result: ', { text: 'Super good', id: 823423 })

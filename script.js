@@ -169,7 +169,10 @@ console.log('Exercise 4 correct result: ', {
 Exercise 5: Array.prototype.map()
 */
 
-const firstLast = people.map((name) => {})
+const firstLast = people.map((name) => {
+  let vari = name.split(',')
+  return `${vari[1]} ${vari[0]}`
+})
 
 // Complete the exercise in the space below:
 

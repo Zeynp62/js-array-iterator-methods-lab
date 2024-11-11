@@ -98,3 +98,30 @@ console.log('Exercise 1 correct result: ', [
   { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
   { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 }
 ])
+/*
+Exercise 2: Array.prototype.map()
+*/
+
+let inventorNames = inventors.map((inventorName) => {
+  const names = { first: inventorName.first, last: inventorName.last }
+  return names
+})
+
+// Complete the exercise in the space below:
+
+// Check your work:
+console.log('Exercise 2 my result: ', inventorNames)
+console.log('Exercise 2 correct result: ', [
+  { first: 'Albert', last: 'Einstein' },
+  { first: 'Isaac', last: 'Newton' },
+  { first: 'Galileo', last: 'Galilei' },
+  { first: 'Marie', last: 'Curie' },
+  { first: 'Johannes', last: 'Kepler' },
+  { first: 'Nicolaus', last: 'Copernicus' },
+  { first: 'Max', last: 'Planck' },
+  { first: 'Katherine', last: 'Blodgett' },
+  { first: 'Ada', last: 'Lovelace' },
+  { first: 'Sarah E.', last: 'Goode' },
+  { first: 'Lise', last: 'Meitner' },
+  { first: 'Hanna', last: 'Hammarström' }
+])

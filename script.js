@@ -165,3 +165,80 @@ console.log('Exercise 4 correct result: ', {
   year: 1815,
   passed: 1852
 })
+/*
+Exercise 5: Array.prototype.map()
+*/
+
+const firstLast = people.map((name) => {})
+
+// Complete the exercise in the space below:
+
+// Check your work:
+console.log('Exercise 5 my result: ', firstLast)
+console.log('Exercise 5 correct result: ', [
+  'Carl Becker',
+  'Samuel Beckett',
+  'Mick Beddoes',
+  'Henry Beecher',
+  'Ludwig Beethoven',
+  'Menachem Begin',
+  'Hilaire Belloc',
+  'Saul Bellow',
+  'Robert Benchley',
+  'Peter Benenson',
+  'David Ben-Gurion',
+  'Walter Benjamin',
+  'Tony Benn',
+  'Chester Bennington',
+  'Leana Benson',
+  'Silas Bent',
+  'Lloyd Bentsen',
+  'Ric Berger',
+  'Ingmar Bergman',
+  'Luciano Berio',
+  'Milton Berle',
+  'Irving Berlin',
+  'Eric Berne',
+  'Sandra Bernhard',
+  'Yogi Berra',
+  'Halle Berry',
+  'Wendell Berry',
+  'Erin Bethea',
+  'Aneurin Bevan',
+  'Ken Bevel',
+  'Joseph Biden',
+  'Ambrose Bierce',
+  'Steve Biko',
+  'Josh Billings',
+  'Frank Biondo',
+  'Augustine Birrell',
+  'Elk Black',
+  'Robert Blair',
+  'Tony Blair',
+  'William Blake'
+])
+
+/*
+Exercise 6: Array.prototype.some()
+*/
+const isAdultPresent = devs.some((adult) => {
+  return 2024 - adult.year >= 18
+})
+
+// Complete the exercise in the space below:
+
+// Check your work:
+console.log('Exercise 6 my result: ', isAdultPresent)
+console.log('Exercise 6 correct result: ', true)
+/*
+Exercise 7: Array.prototype.every()
+*/
+
+let isEveryone19OrOlder = devs.every((adult) => {
+  return 2024 - adult.year >= 19
+})
+// Complete the exercise in the space below:
+
+// Check your work:
+console.log('Exercise 7 my result: ', isEveryone19OrOlder)
+console.log('Exercise 7 correct result: ', false)
